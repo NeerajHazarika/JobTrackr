@@ -42,7 +42,7 @@ const AuthenticationPage = () => {
       );
       if (response.status !== 201)
         window.alert(`${response.data.msg}. Please try again`);
-      else if (url === "login") {
+      else {
         navigatePage();
       }
     } catch (error) {
